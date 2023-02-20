@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.config;
+package com.semillero2023.practica3.config;
 
 import java.io.IOException;
 

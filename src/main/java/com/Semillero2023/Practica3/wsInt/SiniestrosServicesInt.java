@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.wsInt;
+package com.semillero2023.practica3.wsint;
 
 import java.util.List;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.Semillero2023.Practica3.dto.SiniestroDto;
-import com.Semillero2023.Practica3.entity.Siniestros;
+import com.semillero2023.practica3.dto.SiniestroDto;
+import com.semillero2023.practica3.entity.Siniestros;
 
 @CrossOrigin
 @RestController
@@ -30,10 +30,10 @@ public interface SiniestrosServicesInt {
 	public List<Siniestros> verTodos();
 	
 	@PostMapping("/crearSiniestro")
-	public Siniestros addSiniestro(@RequestBody SiniestroDto SiniestroDto);
+	public Siniestros addSiniestro(@RequestBody SiniestroDto siniestroDto);
 	
 	@PutMapping("/modificarSiniestro")
-	public Siniestros modificarSiniestro(@RequestBody SiniestroDto SiniestroDto);
+	public Siniestros modificarSiniestro(@RequestBody SiniestroDto siniestroDto);
 	
 	@DeleteMapping("/eliminarSiniestro/{id}")
 	public ResponseEntity<String> deleteSiniestro(@PathVariable("id") Integer id);

@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.ws;
+package com.semillero2023.practica3.ws;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,12 +12,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import com.Semillero2023.Practica3.dto.SiniestroDto;
-import com.Semillero2023.Practica3.entity.Seguros;
-import com.Semillero2023.Practica3.entity.Siniestros;
-import com.Semillero2023.Practica3.repository.SegurosRepository;
-import com.Semillero2023.Practica3.repository.SiniestrosRepository;
-import com.Semillero2023.Practica3.wsInt.SiniestrosServicesInt;
+import com.semillero2023.practica3.dto.SiniestroDto;
+import com.semillero2023.practica3.entity.Seguros;
+import com.semillero2023.practica3.entity.Siniestros;
+import com.semillero2023.practica3.repository.SegurosRepository;
+import com.semillero2023.practica3.repository.SiniestrosRepository;
+import com.semillero2023.practica3.wsint.SiniestrosServicesInt;
 
 @Component
 public class SiniestrosServices implements SiniestrosServicesInt{

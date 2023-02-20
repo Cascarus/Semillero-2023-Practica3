@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.ws;
+package com.semillero2023.practica3.ws;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,11 +9,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import com.Semillero2023.Practica3.dto.ClientesDto;
-import com.Semillero2023.Practica3.entity.Clientes;
-import com.Semillero2023.Practica3.repository.ClientesRepository;
-import com.Semillero2023.Practica3.repository.SegurosRepository;
-import com.Semillero2023.Practica3.wsInt.ClientesServiceInt;
+import com.semillero2023.practica3.dto.ClientesDto;
+import com.semillero2023.practica3.entity.Clientes;
+import com.semillero2023.practica3.repository.ClientesRepository;
+import com.semillero2023.practica3.repository.SegurosRepository;
+import com.semillero2023.practica3.wsint.ClientesServiceInt;
 
 
 @Component
@@ -65,12 +65,12 @@ public class ClientesService implements ClientesServiceInt{
 	}
 
 	@Override
-	public List<Clientes> BuscarPorNombre(String nombre) {
+	public List<Clientes> buscarPorNombre(String nombre) {
 		return clientesRepository.findByNombreClStartingWith(nombre.replace("+", " "));
 	}
 
 	@Override
-	public List<Clientes> BuscarPorCiudad(String ciudad) {
+	public List<Clientes> buscarPorCiudad(String ciudad) {
 		return clientesRepository.findByCiudadLike(ciudad.replace("+", " "));
 	}
 

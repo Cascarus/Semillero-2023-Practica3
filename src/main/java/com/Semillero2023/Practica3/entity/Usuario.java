@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.entity;
+package com.semillero2023.practica3.entity;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.wsInt;
+package com.semillero2023.practica3.wsint;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.Semillero2023.Practica3.dto.ClientesDto;
-import com.Semillero2023.Practica3.entity.Clientes;
+import com.semillero2023.practica3.dto.ClientesDto;
+import com.semillero2023.practica3.entity.Clientes;
 
 @CrossOrigin
 @RestController
@@ -37,8 +37,8 @@ public interface ClientesServiceInt {
 	public ResponseEntity<String> deleteCliente(@PathVariable("dni") Integer dni);
 	
 	@GetMapping("/buscarPorNombre/{nombre}")
-	public List<Clientes> BuscarPorNombre(@PathVariable("nombre") String nombre);
+	public List<Clientes> buscarPorNombre(@PathVariable("nombre") String nombre);
 	
 	@GetMapping("/buscarPorCiudad/{ciudad}")
-	public List<Clientes> BuscarPorCiudad(@PathVariable("ciudad") String ciudad);
+	public List<Clientes> buscarPorCiudad(@PathVariable("ciudad") String ciudad);
 }

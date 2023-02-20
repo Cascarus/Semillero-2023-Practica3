@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.config;
+package com.semillero2023.practica3.config;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.function.Function;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.Semillero2023.Practica3.entity.Usuario;
+import com.semillero2023.practica3.entity.Usuario;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -38,7 +38,7 @@ public class JwtGeneratorImpl implements JwtGeneratorInterface {
 		String jwtToken = "";
 		jwtToken = Jwts.builder().setSubject(user.getUsername()).setIssuedAt(new Date())
 				.setIssuedAt(new Date())
-				.setExpiration(new Date(System.currentTimeMillis() + (1000*60)))
+				.setExpiration(new Date(System.currentTimeMillis() + (5000*60)))
 				.signWith(SignatureAlgorithm.HS256, "secret")
 				.compact();
 		Map<String, String> jwtTokenGen = new HashMap<>();

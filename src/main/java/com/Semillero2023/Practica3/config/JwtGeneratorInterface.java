@@ -1,8 +1,8 @@
-package com.Semillero2023.Practica3.config;
+package com.semillero2023.practica3.config;
 
 import java.util.Map;
 
-import com.Semillero2023.Practica3.entity.Usuario;
+import com.semillero2023.practica3.entity.Usuario;
 
 public interface JwtGeneratorInterface {
 	Map<String, String> generateToken(Usuario user);

@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.entity;
+package com.semillero2023.practica3.entity;
 
 import java.io.Serializable;
 import java.util.List;
@@ -49,7 +49,7 @@ public class Companias implements Serializable {
 	
 	@ManyToMany(mappedBy = "companiaSeguros")
 	@JsonBackReference
-	List<Seguros> seguros;
+	private List<Seguros> seguros;
 
 	public String getNombreCompania() {
 		return nombreCompania;

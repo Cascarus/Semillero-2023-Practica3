@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.ws;
+package com.semillero2023.practica3.ws;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,10 +9,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import com.Semillero2023.Practica3.dto.CompaniaDto;
-import com.Semillero2023.Practica3.entity.Companias;
-import com.Semillero2023.Practica3.repository.CompaniasRepository;
-import com.Semillero2023.Practica3.wsInt.CompaniasServiceInt;
+import com.semillero2023.practica3.dto.CompaniaDto;
+import com.semillero2023.practica3.entity.Companias;
+import com.semillero2023.practica3.repository.CompaniasRepository;
+import com.semillero2023.practica3.wsint.CompaniasServiceInt;
 
 @Component
 public class CompaniasService implements CompaniasServiceInt{

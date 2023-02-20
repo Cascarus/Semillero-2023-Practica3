@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.wsInt;
+package com.semillero2023.practica3.wsint;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.Semillero2023.Practica3.dto.CompaniaSeguroDto;
-import com.Semillero2023.Practica3.entity.CompaniaSeguro;
+import com.semillero2023.practica3.dto.CompaniaSeguroDto;
+import com.semillero2023.practica3.entity.CompaniaSeguro;
 
 @CrossOrigin
 @RestController

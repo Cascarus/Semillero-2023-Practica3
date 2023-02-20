@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.ws;
+package com.semillero2023.practica3.ws;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,11 +9,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import com.Semillero2023.Practica3.dto.PeritoDto;
-import com.Semillero2023.Practica3.entity.Peritos;
-import com.Semillero2023.Practica3.repository.PeritosRepository;
-import com.Semillero2023.Practica3.repository.SiniestrosRepository;
-import com.Semillero2023.Practica3.wsInt.PeritosServiceInt;
+import com.semillero2023.practica3.dto.PeritoDto;
+import com.semillero2023.practica3.entity.Peritos;
+import com.semillero2023.practica3.repository.PeritosRepository;
+import com.semillero2023.practica3.repository.SiniestrosRepository;
+import com.semillero2023.practica3.wsint.PeritosServiceInt;
 
 @Component
 public class PeritosService implements PeritosServiceInt{

@@ -1,14 +1,14 @@
-package com.Semillero2023.Practica3.ws;
+package com.semillero2023.practica3.ws;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import com.Semillero2023.Practica3.config.JwtGeneratorInterface;
-import com.Semillero2023.Practica3.repository.UsuarioRepository;
-import com.Semillero2023.Practica3.entity.Usuario;
-import com.Semillero2023.Practica3.wsInt.UsuarioServicesInt;
+import com.semillero2023.practica3.config.JwtGeneratorInterface;
+import com.semillero2023.practica3.repository.UsuarioRepository;
+import com.semillero2023.practica3.wsint.UsuarioServicesInt;
+import com.semillero2023.practica3.entity.Usuario;
 
 @Component
 public class UsuarioServices implements UsuarioServicesInt{
@@ -20,7 +20,7 @@ public class UsuarioServices implements UsuarioServicesInt{
 	JwtGeneratorInterface jwtGenerator;
 	
 	@Override
-	public ResponseEntity<?> loginUser(Usuario user) {
+	public ResponseEntity<Object> loginUser(Usuario user) {
 		try {
 			if (user.getUsername() == null || user.getPassword() == null) {
 				return new ResponseEntity<>("UserName or Password is Empty", HttpStatus.NOT_ACCEPTABLE);

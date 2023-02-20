@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.dto;
+package com.semillero2023.practica3.dto;
 
 
 public class ClientesDto {

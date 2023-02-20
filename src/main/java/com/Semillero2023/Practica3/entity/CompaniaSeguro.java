@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.entity;
+package com.semillero2023.practica3.entity;
 
 import java.io.Serializable;
 
@@ -27,10 +27,10 @@ public class CompaniaSeguro implements Serializable{
 	private Integer id;
 	
 	@Column(name="NUMERO_POLIZA")
-	private Integer numero_poliza;
+	private Integer numeroPoliza;
 	
 	@Column(name="NOMBRE_COMPANIA")
-	private String nombre_compania;
+	private String nombreCompania;
 
 	public Integer getId() {
 		return id;
@@ -40,21 +40,21 @@ public class CompaniaSeguro implements Serializable{
 		this.id = id;
 	}
 
-	public Integer getNumero_poliza() {
-		return numero_poliza;
+	public Integer getNumeroPoliza() {
+		return numeroPoliza;
 	}
 
-	public void setNumero_poliza(Integer numero_poliza) {
-		this.numero_poliza = numero_poliza;
+	public void setNumeroPoliza(Integer numeroPoliza) {
+		this.numeroPoliza = numeroPoliza;
 	}
 
-	public String getNombre_compania() {
-		return nombre_compania;
+	public String getNombreCompania() {
+		return nombreCompania;
 	}
 
-	public void setNombre_compania(String nombre_compania) {
-		this.nombre_compania = nombre_compania;
+	public void setNombreCompania(String nombreCompania) {
+		this.nombreCompania = nombreCompania;
 	}
 	
-
+	
 }

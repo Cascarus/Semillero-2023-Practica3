@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.repository;
+package com.semillero2023.practica3.repository;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -9,7 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.Semillero2023.Practica3.entity.Seguros;
+import com.semillero2023.practica3.entity.Seguros;
 
 @Repository("SegurosRepository")
 public interface SegurosRepository extends JpaRepository<Seguros, Serializable>{

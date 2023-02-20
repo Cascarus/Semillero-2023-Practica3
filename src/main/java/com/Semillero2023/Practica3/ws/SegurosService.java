@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.ws;
+package com.semillero2023.practica3.ws;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -15,10 +15,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
-import com.Semillero2023.Practica3.dto.SegurosDto;
-import com.Semillero2023.Practica3.entity.Seguros;
-import com.Semillero2023.Practica3.repository.SegurosRepository;
-import com.Semillero2023.Practica3.wsInt.SegurosServicesInt;
+import com.semillero2023.practica3.dto.SegurosDto;
+import com.semillero2023.practica3.entity.Seguros;
+import com.semillero2023.practica3.repository.SegurosRepository;
+import com.semillero2023.practica3.wsint.SegurosServicesInt;
 
 @Component
 public class SegurosService implements SegurosServicesInt{

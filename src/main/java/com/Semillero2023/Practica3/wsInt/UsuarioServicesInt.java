@@ -1,4 +1,4 @@
-package com.Semillero2023.Practica3.wsInt;
+package com.semillero2023.practica3.wsint;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.Semillero2023.Practica3.entity.Usuario;
+import com.semillero2023.practica3.entity.Usuario;
 
 @CrossOrigin
 @RestController
@@ -15,5 +15,5 @@ import com.Semillero2023.Practica3.entity.Usuario;
 public interface UsuarioServicesInt {
 	
 	@PostMapping("/login")
-	public ResponseEntity<?>loginUser(@RequestBody Usuario user);
+	public ResponseEntity<Object>loginUser(@RequestBody Usuario user);
 }
